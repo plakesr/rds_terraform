@@ -1,5 +1,5 @@
 locals {
-  db_instance_id                    = element(concat(aws_db_instance.default.*.id, [""]), 0)
+  db_instance_id = element(concat(aws_db_instance.default.*.id, [""]), 0)
 }
 
 output "db_instance_id" {

@@ -25,7 +25,7 @@ variable "username" {
 }
 
 variable "password" {
-    default = "foobar"
+    default = "fo$Tbaz@tar"
 }
  
 variable "parameter_group_name" {
@@ -38,6 +38,7 @@ variable "replicate_source_db" {
 }
 
 variable "backup_retention_period" {
+
   type        = number
   default     = null
 }
